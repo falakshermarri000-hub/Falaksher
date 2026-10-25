@@ -1,25 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Falaksher - IT Hub Kohlu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falaksher | Product Launch - IT Hub Kohlu</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:sans-serif;margin:0;background:#f1f5f9}
-.hero{background:#0f172a;color:#fff;text-align:center;padding:60px 20px}
-.btn{background:#38bdf8;padding:14px 28px;border:0;border-radius:30px;font-weight:bold}
-.box{background:#fff;margin:15px;padding:20px;border-radius:12px;text-align:center;box-shadow:0 4px 6px #0001}
-footer{background:#0f172a;color:#fff;text-align:center;padding:15px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f8fafc;color:#0f172a;line-height:1.6}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#ffffff;box-shadow:0 2px 20px rgba(0,0,0,0.05);position:sticky;top:0;z-index:1000}
+nav .logo{font-size:22px;font-weight:700;color:#0f172a}
+nav .logo span{color:#38bdf8}
+nav a{margin-left:20px;text-decoration:none;color:#334155;font-weight:600}
+.hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:70px 8%;background:radial-gradient(circle at 20% 30%,#e0f2fe,#ffffff 60%)}
+.hero-text{flex:1;min-width:300px}
+.hero-text h4{color:#38bdf8;letter-spacing:2px}
+.hero-text h1{font-size:48px;line-height:1.2;margin:15px 0}
+.hero-text h1 span{color:#0ea5e9}
+.hero-text p{color:#475569;margin:15px 0 25px;font-size:17px}
+.btn-primary{background:#0f172a;color:#fff;padding:14px 30px;border-radius:30px;text-decoration:none;display:inline-block;font-weight:600;transition:0.3s}
+.btn-primary:hover{background:#38bdf8;transform:translateY(-2px)}
+.hero-img{flex:1;min-width:300px;text-align:center}
+.hero-img img{width:90%;max-width:450px;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.15)}
+
+.section{padding:60px 8%}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:32px}
+.section-title p{color:#64748b}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#fff;padding:28px;border-radius:16px;box-shadow:0 8px 25px rgba(0,0,0,0.06);transition:0.3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,0.1)}
+.card h3{margin:15px 0 10px}
+.card p{color:#64748b;font-size:14px}
+
+.product-showcase{background:#0f172a;color:#fff;border-radius:25px;margin:40px 8%;padding:50px;display:flex;flex-wrap:wrap;align-items:center;gap:30px}
+.product-showcase .text{flex:1}
+.product-showcase h2{font-size:36px}
+.product-showcase p{color:#cbd5e1;margin:15px 0}
+.check li{list-style:none;margin:8px 0}
+.check li::before{content:"✔ ";color:#38bdf8;font-weight:bold}
+
+.pricing{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:20px}
+.price-box{background:#fff;border:2px solid #e2e8f0;border-radius:18px;padding:30px;width:300px;text-align:center}
+.price-box.featured{border-color:#38bdf8;transform:scale(1.05);box-shadow:0 10px 30px rgba(56,189,248,0.2)}
+.price{font-size:36px;font-weight:700;margin:15px 0}
+.price span{font-size:16px;color:#64748b}
+
+footer{background:#020617;color:#94a3b8;text-align:center;padding:30px;margin-top:40px}
+footer strong{color:#fff}
 </style>
 </head>
 <body>
-<div class="hero">
-<h1>NexWatch - Future on Your Wrist</h1>
-<p>IT Hub Kohlu | BS 5th Semester - Interim Exam</p><br>
-<button class="btn">Buy Now - 50% OFF</button>
-</div>
-<div class="box"><h3>🔋 7 Days Battery</h3><p>Ek bar charge, pura hafta</p></div>
-<div class="box"><h3>❤️ Health Tracking</h3><p>Dil ki dharkan aur neend check</p></div>
-<div class="box"><h3>💧 Waterproof IP68</h3><p>Barish me bhi chalega</p></div>
-<footer>Falak Sher Marri | IT Hub Kohlu | Interim Exam 2026</footer>
+
+<nav>
+  <div class="logo">Falak<span>sher</span></div>
+  <div>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#product">Product</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h4>IT HUB KOHLU - BS 5th SEMESTER</h4>
+    <h1>Next Gen <span>Product Launch</span> Page Built For Future</h1>
+    <p>I am Falak Sher Marri, Web Development Student. Ye mera Interim Exam Project hai jo maine HTML5 & Modern CSS3 se banaya hai. Task 1-6 Complete.</p>
+    <a href="#product" class="btn-primary">Explore My Work →</a>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=600" alt="product">
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="section-title">
+    <h2>Why My Product is Different?</h2>
+    <p>Modern Design, Clean Code, and User Friendly Experience</p>
+  </div>
+  <div class="cards">
+    <div class="card"><h3>🎨 Modern UI/UX</h3><p>Neat and clean design inspired by top tech companies like Apple and Tesla.</p></div>
+    <div class="card"><h3>⚡ Fast & Responsive</h3><p>Mobile, Tablet, Laptop har screen par 100% responsive aur fast loading.</p></div>
+    <div class="card"><h3>💻 Pure Code</h3><p>No template, no copy. Sara code khud likha gaya hai as a real web developer.</p></div>
+    <div class="card"><h3>🚀 Launch Ready</h3><p>Ye product launching page kisi bhi new startup ya product ke liye ready hai.</p></div>
+  </div>
+</section>
+
+<section class="product-showcase" id="product">
+  <div class="text">
+    <h2>Introducing Falak Smart Watch X1</h2>
+    <p>Ye mera demo product hai. Is page ka maqsad ye dikhana hai ke product ko kaise launch karte hain.</p>
+    <ul class="check">
+      <li>4K Display with AMOLED Technology</li>
+      <li>7 Days Battery Backup</li>
+      <li>Waterproof & Dustproof Design</li>
+      <li>Made with Love in Kohlu, Balochistan</li>
+    </ul>
+    <br>
+    <a href="#" class="btn-primary" style="background:#38bdf8">Buy Now - Rs. 12,500</a>
+  </div>
+  <div style="flex:1;text-align:center">
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=500" style="width:90%;border-radius:20px" alt="watch">
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <h2>Simple Pricing</h2>
+    <p>Student Project ke liye demo pricing</p>
+  </div>
+  <div class="pricing">
+    <div class="price-box"><h3>Basic</h3><div class="price">Free <span>/project</span></div><p>For Learning Purpose<br>1 Page Design<br>Email Support</p></div>
+    <div class="price-box featured"><h3>Interim Exam</h3><div class="price">A+ <span>/Grade</span></div><p>Task 1 to 6 Complete<br>Full Responsive<br>Submitted to IT Hub Kohlu</p><br><a href="#" class="btn-primary" style="background:#38bdf8">My Submission</a></div>
+    <div class="price-box"><h3>Pro</h3><div class="price">Rs.5000 <span>/site</span></div><p>For Clients<br>Full Website<br>Domain + Hosting</p></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p><strong>Falak Sher Marri</strong> | BS 5th Semester - IT Hub Kohlu</p>
+  <p>Email: falakshermarri000@gmail.com | Location: Kohlu, Balochistan, Pakistan</p>
+  <p style="margin-top:10px">© 2026 Built with ❤️ by Falak Sher - All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
